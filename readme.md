@@ -1,5 +1,11 @@
 # WhaleConnect Logo
 
+Licensed under CC BY-ND 4.0
+
+[![CC BY-ND](https://licensebuttons.net/l/by-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/)
+
+## Banner
+
 ![Banner](out/banner.png)
 
 ## Icon Preview

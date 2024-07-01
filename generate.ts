@@ -9,7 +9,19 @@ const bannerOutPath = "out/banner.png";
 
 sharp(bannerPath).toFile(bannerOutPath);
 
-let outText = `# WhaleConnect Logo\n\n![Banner](${bannerOutPath})\n\n## Icon Preview\n\n`;
+let outText = `# WhaleConnect Logo
+
+Licensed under CC BY-ND 4.0
+
+[![CC BY-ND](https://licensebuttons.net/l/by-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/)
+
+## Banner
+
+![Banner](${bannerOutPath})
+
+## Icon Preview
+
+`;
 
 for (const size of [16, 24, 32, 48, 64, 128, 256]) {
   const previewPath = `${outPath}/icon_${size}.png`;
@@ -18,6 +30,14 @@ for (const size of [16, 24, 32, 48, 64, 128, 256]) {
   outText += `### ${size}x${size}\n\n![${size}x${size}](${previewPath})\n\n`;
 }
 
-outText += "## Generate\n\n```shell\nnpm i\nnpm run generate-ico\nnpm run generate-icns\nnpm run generate-previews\n```\n"
+outText += `## Generate
+
+\`\`\`shell
+npm i
+npm run generate-ico
+npm run generate-icns
+npm run generate-previews
+\`\`\`
+`
 
 fs.writeFileSync("readme.md", outText);
