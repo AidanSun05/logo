@@ -1,0 +1,16 @@
+{
+  "name": "logo",
+  "scripts": {
+    "generate-ico": "npx icon-gen -i img/icon.svg -o out --ico",
+    "generate-icns": "npx icon-gen -i img/icon-mac.svg -o out --icns",
+    "generate-previews": "tsx generate.ts"
+  },
+  "dependencies": {
+    "icon-gen": "^4.0.0",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.0"
+  }
+}
