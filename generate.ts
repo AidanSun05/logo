@@ -18,6 +18,6 @@ for (const size of [16, 24, 32, 48, 64, 128, 256]) {
   outText += `### ${size}x${size}\n\n![${size}x${size}](${previewPath})\n\n`;
 }
 
-outText += "## Generate\n\n```shell\nnpm i\nnpm run generate-previews\nnpm run generate-icons\n```\n"
+outText += "## Generate\n\n```shell\nnpm i\nnpm run generate-ico\nnpm run generate-icns\nnpm run generate-previews\n```\n"
 
 fs.writeFileSync("readme.md", outText);

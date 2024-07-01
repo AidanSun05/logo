@@ -36,6 +36,7 @@
 
 ```shell
 npm i
+npm run generate-ico
+npm run generate-icns
 npm run generate-previews
-npm run generate-icons
 ```
